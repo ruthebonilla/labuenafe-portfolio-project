@@ -1,23 +1,17 @@
 :root{
   --heading-font-family:'Sigmar One', cursive;
   --default-font-family:'Red Hat Text', sans-serif;
+  --heading-text-color:#1f2022;
 }
 
 body{
 margin: 100px 30px;
-background-color: #d1dae2;
-    
-}
-h5{
-text-align: end;
-font-family: var(--default-font-family);
-font-size: 19px;
-margin-bottom: 30px;
+background-color: #d1dae2;   
 }
 
 h1{
 font-family: var(--heading-font-family);
-color: #1f2022;
+color: var(--heading-text-color);
 text-align: center;
   font-size:100px;
     letter-spacing:0.1em;
@@ -27,19 +21,29 @@ text-align: center;
   text-shadow: 5px 5px, 12px 12px #468fa1;
 }
 
-h2{
+ h2{
   font-family: var(--heading-font-family);
-   color:#1f2022;
+  color:var(--heading-text-color);
   font-weight: normal;
   text-align: center;
   font-size: 70px;
-  margin-top: 25px;
-  
+  margin-top: px;
 }
 
-p{
+.products h2{
+    margin-bottom: 80px;
+}
+
+.products h3{
     font-family: var(--default-font-family);
-    color:  #1f2022;
+    color:var(--heading-text-color);
+    font-weight: normal;
+    font-size:45px;    
+}
+
+.hero p{
+    font-family: var(--default-font-family);
+    color:var(--heading-text-color);
     display: block;
     margin: 0px auto;
     font-size: 23px;
@@ -47,6 +51,20 @@ p{
     margin-bottom: 15px;
     max-width: fit-content;
     padding: 2px 20px;
+}
+
+.products p{
+    font-family:var(--default-font-family);
+    color:var(--heading-text-color);
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+h5{
+text-align: end;
+font-family: var(--default-font-family);
+font-size: 19px;
+margin-bottom: 30px;
 }
 
 .btn-address{
@@ -57,27 +75,29 @@ max-width: fit-content;
 margin-top: 20px;
 padding: 12px 25px;
 font-size: 20px;
-color:#1f2022;
+color:var(--heading-text-color);
 background:white;
-
 }
 
 .btn-address:hover{
     background:#d1dae2;
-    border-color: #1f2022;
+    border-color:var(--heading-text-color);
 }
 
 .hero-img{
     padding: 20px 67px;
 }
 
+.products img{
+    margin-left: -11px;
+}
+
+
+
+
 @media (max-width:900px){
 body{
     margin-top: 48px;  
-}
-
-h5{
-    font-size: 15px;
 }
 
     h1{
@@ -89,23 +109,46 @@ h5{
   text-shadow: 4px 3px, 9px 5px #468fa1;
     }
 
-    h2{
+     h2{
         font-size: 30px;
         margin-top: 15px;
     }
 
-    p{
+    .products h2{
+        margin-bottom: 30px;
+    }
+
+    .products h3{
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero p{
         font-size: 12px;
         margin-top: 15px;
         text-align: center;
+    }
+
+    .products p{
+    font-size: 14px;
+    text-align: center;
     }
 
     h4{
         font-size: 20px;
     }
 
+    h5{
+    font-size: 15px;
+}
+
     .hero-img{
         padding: 30px 0px;  
+    }
+
+    .products img{
+        margin-left: 0;
     }
 
     .btn-address{
