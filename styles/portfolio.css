@@ -27,7 +27,7 @@ text-align: center;
   font-weight: normal;
   text-align: center;
   font-size: 70px;
-  margin-top: px;
+  
 }
 
 .products h2{
@@ -134,7 +134,7 @@ ul{
     list-style: none;
     text-align: center;
     line-height: 2.4;
-    padding: 0 60px;
+    padding: 0 100px;
 }
 
 @media (max-width:900px){
@@ -203,6 +203,7 @@ body{
 
     ul{
         font-size: 14px;
+        padding:0 60px;
     }
 }
 
