@@ -5,7 +5,7 @@
 }
 
 body{
-background-color: #dce3e9;   
+background-color: #ecf0f3;   
 }
 
 h1{
@@ -54,6 +54,11 @@ text-align: center;
     text-align: center;
 }
 
+p{
+    font-family: var(--default-font-family);
+    
+}
+
 .hero p{
     font-family: var(--default-font-family);
     color:var(--heading-text-color);
@@ -71,6 +76,13 @@ text-align: center;
     line-height: 1.7;
     font-size: 19px;
 }
+
+ .contact h4{
+    font-family:var(--default-font-family);
+    color:var(--heading-text-color);
+    text-align: center;
+}
+
 
 h5{
 text-align: end;
@@ -121,12 +133,6 @@ background:white;
     text-align: center;
 }
 
-h4{
-    font-family:var(--default-font-family);
-    color:var(--heading-text-color);
-    text-align: center;
-}
-
 .contact ul{
     font-family:var(--default-font-family);
     color:var(--heading-text-color);
@@ -142,6 +148,21 @@ h4{
 
 .fa-shopping-cart{
    font-size: 25px; 
+}
+
+
+.icons{
+    margin:0 15px;
+    color: var(--heading-text-color);
+    background-color:white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icons:hover {
+background-color:#468fa1;
+color: white;
+transition:all  100ms ease-in-out;
 }
 
 @media (max-width:900px){
