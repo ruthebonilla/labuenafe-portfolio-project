@@ -167,6 +167,7 @@ transition:all  100ms ease-in-out;
 
 .my-info{
     font-size: 13px;
+    padding: 15px;
 }
 
 .my-info a{
